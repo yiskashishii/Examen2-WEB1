@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JCRAM'V Login</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+        <script src="login.js" defer></script>
+    </head>
+    
+    <body>
+        <section>
+            <div class="content-box">
+                <div class="form-box">
+                    <h1>Login</h1>
+                    <p>Enter your credentials to access a world of travel<br>opportunities, personalized itineraries, and
+                        exclusive deals.<br>Let's explore the world together!</p>
+                    <form onsubmit="submit" id="form">
+                        <div class="input-box">
+                            <i class="fa fa-user-circle"></i>
+                            <input id="Email" type="email" placeholder="test@gmail.com" required>
+                        </div>
+                        <div class="input-box">
+                            <i class="fa fa-lock"></i>
+                            <input id="Password" type="password" placeholder="Password" required>
+                        </div>
+                        <div class="button-box">
+                            <button id="myButton" type="submit" class="login-btn" onclick="inputValidation()">Login
+                                Now</button>
+                        </div>
+                            <p class="errorAlert"></p>
+                </form>
+            </div>
+            </div>
+            <div class="img-box">
+                <img src="photos/loginImage.png" class="img-bounce">
+                <img src="photos/plane.png" class="img-grow">
+            </div>
+        </section>
+    </body>

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="eng"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JCRAM'V</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6e1c5c54ca.js" crossorigin="anonymous"></script>
+    
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="photos/logo.png">
+            <h2>JCRAM'V</h2>
+        </div>
+        <div class="menu">
+            <ul class="menu-list">
+                <div class="icon cancel-btn">
+                    <i class = "fa fa-times"></i>
+                </div>
+                <li><a href="#">Home</a></li>
+                <li><a href="#section2">About</a></li>
+                <li><a href="#section3">Destination</a></li>
+                <li><a href="#section5">Hotel</a></li>
+                <li><a href="#section4">Reservation</a></li>
+            </ul>
+            <div class="icon menu-btn">
+                <i class = "fa fa-bars"></i>
+            </div>
+        </div>
+        <a href="login.html"><button class="logout-btn" type="submit" >Sign out</button></a>
+    </header>
+    <script>
+        const menu = document.querySelector(".menu-list");
+        const menuBtn = document.querySelector(".menu-btn");
+        const canceBtn = document.querySelector(".cancel-btn");
+        menuBtn.onclick = ()=>{
+            menu.classList.add("active");
+            menuBtn.classList.add("hide");
+        }
+        canceBtn.onclick = ()=>{
+            menu.classList.remove("active");
+            menuBtn.classList.remove("hide");
+        }
+    </script>
+
+    <Section id="section1" class="home">
+        <div class="home-row">   
+            <div class="home-txt">
+                <h1 style="font-size: 35px;">Discover the<br>best destinations<br>in the world</h1>
+                <p style="color: rgb(122, 120, 118);">Welcome to JCRAM'V, your first destination for<br>discoverring the most breathtaking places on Earth.<br>Whether you're seeking adventure or relaxation, we have<br>the perfect getaway for you.</p>
+                <form>
+                    <button class="myButton" href="#" >Get Started</button>
+                </form>    
+            </div>
+            
+            <div class="home-img">
+                <div class="home-img1-bg">
+                    <img src="photos/girlTravel.png" class="home-img1">
+                </div>
+                <img src="photos/fleche-courbe.png" class="home-img2">
+                <div class="home-img3-bg">
+                    <img src="photos/bannerBefor.jpg" class="home-img3">
+                </div>
+                <div class="icon">
+                    <div class="circle">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p> 6.8</p>
+                </div>
+            </div>
+        </div>
+    </Section>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+
+    <section id="section2" class="about" data-aos="zoom-in">
+        <div class="about-container">
+            <div class="about-row">
+                <div class="about-img">
+                    <div class="img-up">
+                        <img src="photos/about1.jpg">
+                        <img style="width: 220px; height: 220px" src="photos/about2.jpg">
+                    </div>
+                    <div class="img-down">
+                        <img style="width: 220px; height: 220px" src="photos/about3.jpg">
+                        <img src="photos/about4.jpg">
+                    </div>
+                </div>    
+            
+                <div class="about-txt">
+                    <h1>We Recommend a Beautiful place every month</h1>
+                    <p>At JCRAM'V, we strive to bring you the most stunning destinations every month. From tropical paradises to historic landmarks, our curated selections are sure to inspire your next adventure.</p>
+                    <a href="#section4"><button type="button" class="myButton">Reservation</button></a>
+                    <div class="stat-container">
+                        <div class="stat">
+                            <div class="customers-odometer odometer percent" target="99">0</div>
+                            <div>of satisfied customers recommend our services</div>
+                        </div>
+                        <div class="stat">
+                            <div class="countries-odometer odometer" target="220">0</div>
+                            <div>countries visited annually</div>
+                        </div>
+                        <div class="stat">
+                            <div class="years-odometer odometer" target="50">0</div>
+                            <div>years of experience in the travel industry</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="essai.js"></script>
+
+    <section id="section3" class="destination" data-aos="zoom-in">
+        <div class="destination-txt">    
+            <h1 style="padding-bottom: 35px;">Top Destination</h1>
+            <p style="padding-bottom: 35px;">Explore our best destination</p>
+        </div>
+        
+        <div class="destination-container">
+            <div class="destination-list">
+                <div><img src="photos/topdestination1.jpg"></div>
+                <div class="lieu">
+                    <div>
+                        <h1>Poitiers</h1>
+                        <p>2 Days 3 Nights</p>
+                    </div>
+                    <div style="color: orange;"><i class="fa-solid fa-star"></i>4.3</div>
+                </div>
+                <div class="offer">
+                    <div class="offer-list">
+                        <i class="fa-solid fa-plane"></i>
+                        <p>Plane</p>
+                    </div>
+                    <div class="offer-list">
+                        <i class="fa-solid fa-hotel"></i>
+                        <p>Hotel</p>
+                    </div>
+                    <div class="offer-list">
+                        <i class="fa fa-car" aria-hidden="true"></i>
+                        <p>Transfert</p>
+                    </div>
+                    <div class="offer-list">
+                        <i class="fa-solid fa-umbrella-beach"></i>
+                        <p>Activity</p>
+                    </div>
+                </div>
+                <div class="price-container">
+                    <div class="price">
+                        <div class="bookmark"><i class="fa-solid fa-bookmark" style="color: orange;"></i></div>
+                        <div class="price-pax"><p>98.90$/person</p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="destination-list">
+                <div><img src="photos/topdestination2.jpg"></div>
+                <div class="lieu">
+                    <div>
+                        <h1>Spain</h1>
+                        <p>6 Days 7 Nights</p>
+                    </div>
+                    <div style="color: orange;"><i class="fa-solid fa-star"></i>4.7</div>
+                </div>
+                <div class="offer">
+                    <div class="offer-list">
+                        <i class="fa-solid fa-plane"></i>
+                        <p>Plane</p>
+                    </div>
+                    <div class="offer-list">
+                        <i class="fa-solid fa-hotel"></i>
+                        <p>Hotel</p>
+                    </div>
+                    <div class="offer-list">
+                        <i class="fa fa-car" aria-hidden="true"></i>
+                        <p>Transfert</p>
+                    </div>
+                    <div class="offer-list">
+                        <i class="fa-solid fa-umbrella-beach"></i>
+                        <p>Activity</p>
+                    </div>
+                </div>
+                <div class="price-container">
+                    <div class="price">
+                        <div class="bookmark"><i class="fa-solid fa-bookmark" style="color: orange;"></i></div>
+                        <div class="price-pax"><p>98.90$/person</p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="destination-list">
+                <div><img src="photos/topdestination3.jpg"></div>
+                <div class="lieu">
+                    <div>
+                        <h1>Kenya</h1>
+                        <p>8 Days 9 Nights</p>
+                    </div>
+                    <div style="color: orange;"><i class="fa-solid fa-star"></i>4.9</div>
+                </div>
+                <div class="offer">
+                    <div class="offer-list">
+                        <i class="fa-solid fa-plane"></i>
+                        <p>Plane</p>
+                    </div>
+                    <div class="offer-list">
+                        <i class="fa-solid fa-hotel"></i>
+                        <p>Hotel</p>
+                    </div>
+                    <div class="offer-list">
+                        <i class="fa fa-car" aria-hidden="true"></i>
+                        <p>Transfert</p>
+                    </div>
+                    <div class="offer-list">
+                        <i class="fa-solid fa-umbrella-beach"></i>
+                        <p>Activity</p>
+                    </div>
+                </div>
+                <div class="price-container">
+                    <div class="price">
+                        <div class="bookmark"><i class="fa-solid fa-bookmark" style="color: orange;"></i></div>
+                        <div class="price-pax"><p>80$/person</p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="destination-list">
+                <div><img src="photos/topdestination4.jpg"></div>
+                <div class="lieu">
+                    <div>
+                        <h1>Hallstatt</h1>
+                        <p>3 Days 4 Nights</p>
+                    </div>
+                    <div style="color: orange;"><i class="fa-solid fa-star"></i>4.9</div>
+                </div>
+                <div class="offer">
+                    <div class="offer-list">
+                        <i class="fa-solid fa-plane"></i>
+                        <p>Plane</p>
+                    </div>
+                    <div class="offer-list">
+                        <i class="fa-solid fa-hotel"></i>
+                        <p>Hotel</p>
+                    </div>
+                    <div class="offer-list">
+                        <i class="fa fa-car" aria-hidden="true"></i>
+                        <p>Transfert</p>
+                    </div>
+                    <div class="offer-list">
+                        <i class="fa-solid fa-umbrella-beach"></i>
+                        <p>Activity</p>
+                    </div>
+                </div>
+                <div class="price-container">
+                    <div class="price">
+                        <div class="bookmark"><i class="fa-solid fa-bookmark" style="color: orange;"></i></div>
+                        <div class="price-pax"><p>108.90$/person</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section4" class="reservation">
+        <div class="reservation-content">
+            <div class="reservation-box">
+                <div>
+                    <h1 style="font-size: xx-large;">Life is short,<br>the world is wide</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis harum natus ex, sit numquam eligendi illum cupiditate.</p>
+                    <h2>Here our reservation</h2>
+                </div>
+                <div class="reservation-data">    
+                    <form class="input">
+                        <div class="input-data">
+                        <div class="data-gauche">
+                            <label for="location"><b>Location</b></label>
+                            <div class="reservation-data">
+                                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                                <input style="text-indent: 40px;" type="text" id="location" placeholder="where are you going" required="true">
+                            </div>
+                            <label for="check-out"><b>Check out</b></label>
+                            <div class="reservation-data">
+                                <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+                                <input type="date" id="check-out" required="true">
+                            </div>
+                        </div>
+                        <div class="data-droite">
+                            <label for="check-in"><b>Check in</b></label>
+                            <div class="reservation-data">
+                                <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+                                <input type="date" id="check-in" required="true">
+                            </div>
+                            <label for="email"><b>E-mail</b></label>
+                            <div class="reservation-data">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                <input style="text-indent: 43px;" type="email" id="email" required="true">
+                            </div>
+                        </div>
+                        </div>
+                        <div class="reservation-button">
+                            <button type="submit">make reservation</button>
+                        </div>
+                    </form>
+                </div>          
+            </div>
+            <div class="reservation-img">
+                <img src="photos/reservation.jpg">
+            </div>   
+        </div>
+    </section>
+
+    <section id="section5" class="hotel">
+        <div class="hotel-txt">
+            <h1>Our hotel</h1>
+            <p>You can see their one of our hotel destination</p>
+        </div>
+        <div class="hotel-img">
+            <div class="img-cote">
+                <div class="img-top">
+                    <img src="photos/hotel1.jpg">
+                </div>
+                <div class="img-bottom">
+                    <img src="photos/hotel2.jpg">
+                </div>
+            </div>
+            <div class="img-centre">
+                <img src="photos/hotel5.jpg">
+            </div>
+            <div class="img-cote">
+                <div class="img-top">
+                    <img src="photos/hotel3.jpg">
+                </div>
+                <div class="img-bottom">
+                    <img src="photos/hotel4.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacts">
+        <div style="padding: 20px 0px;">
+            <div class="contacts-logo">
+                <img src="photos/logo.png">
+                <p>JCRAM'<span style="color: orange;">V</span></p>
+            </div>
+            <div><p>Explore the world with JCRAM'V and<br>discover unforgettable experiences. From<br>the moment you arrive, we're dedicated to<br>making your journey extraordinary.</p></div>
+            <div class="contacts-icon">
+                <div class="icon"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></div>
+                <div class="icon"><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></div>
+                <div class="icon"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></div>
+                <div class="icon"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></div>
+            </div>
+        </div>
+        <div class="adresse">
+            <h1>Contact Us</h1>
+            <p>123 rue Radama Soavimasoandro</p>
+            <p>heistudent@school</p>
+            <p>+261-32-45-567-67</p>
+        </div>
+        <div class="email-us">
+            <h1>Sign up to new paper</h1>
+            <div class="email-area">
+                <input type="email" required="true">
+                <button>Send</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p style="color: white;">Designed by JeanMarc RAJAONARIVELONA</p>
+    </footer>
+</body>
